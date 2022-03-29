@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Юлия Кувшинчикова](https://up.htmlacademy.ru/adaptive/25/user/2037569).
-* Наставник: `Амина Омарова`.
+* Студент: [Юлия Кувшинчикова](https://htmlacademy.ru/profile/juliafrommars).
+* Наставник: [Амина Омарова] (https://htmlacademy.ru/profile/ami).
 
 ---
 
