@@ -1,0 +1,29 @@
+.programms-article {
+  background-color: @basic_grey;
+  width: 280px;
+  height: 266px;
+  position: relative;
+}
+
+.programs-article--slim::before {
+  content: "";
+  background-image: url("../img/cat_back_1.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  background-position: center;
+  position: absolute;
+  left: 22px;
+}
+
+.programs-article--fat::before {
+  content: "";
+  background-image: url("../img/cat_back_2.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  background-position: center;
+  position: absolute;
+  left: 22px;
+}
+
