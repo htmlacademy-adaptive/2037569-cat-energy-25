@@ -1,5 +1,37 @@
 .example-information {
-  display: flex;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "kilograms days"
+    "slim time"
+    "cost cost";
+}
+
+.example-information__number--kilograms {
+  grid-area: kilograms;
+  margin-right: 95px;
+}
+
+.example-information__description--slim {
+  grid-area: slim;
+}
+
+.example-information__number--days {
+  grid-area: days;
+}
+
+.example-information__description--time {
+  grid-area: time;
+}
+
+.example-information__cost {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: @black;
+  text-transform: uppercase;
+  grid-area: cost;
+  margin-top: 24px;
 }
 
 .example-information__number {
@@ -10,14 +42,9 @@
 }
 
 .example-information__description {
+  font-family: @font-arial;
   font-size: 12px;
   line-height: 12px;
   color: @special_dark-grey;
-}
-
-.example-information__cost {
-  font-size: 14px;
-  line-height: 20px;
-  color: @black;
-  text-transform: uppercase;
+  padding-top: 9px;
 }
