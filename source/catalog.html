@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Каталог продукции «Кэт Энерджи»</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="main-header">
@@ -14,18 +16,18 @@
   </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
           <a>
             Главная
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">
             Подбор программы
           </a>
@@ -39,7 +41,7 @@
     <ul class="main-catalog__list">
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy PRO 500 г">
+          <img class="product__image" src="img/catalog-1-desktop%201.png" alt="Cat Energy PRO 500 г">
         </a>
         <a class="product__link" href="#">
           <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -62,7 +64,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy PRO 1000 г">
+          <img class="product__image" src="img/catalog-2-desktop%201.png" alt="Cat Energy PRO 1000 г">
         </a>
         <a class="product__link" href="#">
         <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -85,7 +87,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy PRO 500 г">
+          <img class="product__image" src="img/catalog-3-desktop.png" alt="Cat Energy PRO 500 г">
         </a>
         <a class="product__link" href="#">
           <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -108,7 +110,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy PRO 1000 г">
+          <img class="product__image" src="img/catalog-4-desktop%201.png" alt="Cat Energy PRO 1000 г">
         </a>
         <a class="product__link" href="#">
           <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -131,7 +133,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy slim 500 г">
+          <img class="product__image" src="img/catalog-5-desktop.png" alt="Cat Energy slim 500 г">
         </a>
         <a class="product__link" href="#">
           <h3 class="product__title">Cat Energy slim 500 г</h3>
@@ -154,7 +156,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy slim 1000 г">
+          <img class="product__image" src="img/catalog-6-desktop.png" alt="Cat Energy slim 1000 г">
         </a>
         <a class="product__link" href="#">
           <h3 class="product__title">Cat Energy slim 1000 г</h3>
@@ -177,7 +179,7 @@
       </li>
       <li class="main-catalog__product product">
         <a class="product__link" href="#">
-          <img class="product__image" src="#" alt="Cat Energy slim 500 г">
+          <img class="product__image" src="img/catalog-7-desktop.png" alt="Cat Energy slim 500 г">
         </a>
         <a class="product__link" href="#">
         <h3 class="product__title">Cat Energy slim 500 г</h3>
@@ -234,14 +236,16 @@
         </li>
       </ul>
     <div class="extra-products__promo promo">
-      <img class="promo__icon" src="img/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
-      <p class="promo__slogan">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="promo__wrapper">
+        <img class="promo__icon" src="img/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
+        <p class="promo__slogan">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </div>
   </div>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__contacts contacts">
+    <div class="main-footer__contacts contacts contacts--grey">
       <b class="contacts__appeal">
         Приглашаем<br>
         к сотрудничеству<br>
