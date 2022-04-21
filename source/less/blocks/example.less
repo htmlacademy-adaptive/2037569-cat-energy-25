@@ -1,6 +1,7 @@
 .example__wrapper {
   background-color: #eaeaea;
   padding-top: 25px;
+  position: relative;
 }
 
 .example__title {
@@ -15,4 +16,10 @@
   line-height: 18px;
   color: @special_dark-grey;
   margin-top: 40px;
+}
+
+@media (min-width: @desktop-width) {
+  .example__description {
+    width: 436px;
+  }
 }

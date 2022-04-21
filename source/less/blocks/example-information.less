@@ -4,7 +4,7 @@
   grid-template-areas:
     "kilograms days"
     "slim time"
-    "cost cost";
+    "expenses amount";
 }
 
 .example-information__number--kilograms {
@@ -22,6 +22,14 @@
 
 .example-information__description--time {
   grid-area: time;
+}
+
+.example-information__cost--expenses {
+  grid-area: expenses;
+}
+
+.example-information__cost--amount {
+  grid-area: amount;
 }
 
 .example-information__cost {
@@ -47,4 +55,23 @@
   line-height: 12px;
   color: @special_dark-grey;
   padding-top: 9px;
+}
+
+@media (min-width: @tablet-width) {
+  .example-information {
+    grid-template-areas:
+      "kilograms days expenses"
+      "slim time amount";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-information {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-areas:
+      "kilograms days"
+      "slim time"
+      "expenses amount";
+  }
 }

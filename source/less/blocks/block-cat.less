@@ -5,6 +5,29 @@
   color: @black;
 }
 
-.block-cat__image {
-  margin-top: 40px;
+@media (min-width: @tablet-width) {
+  .block-cat__switch {
+    display: flex;
+    margin-left: 340px;
+  }
+
+  .block-cat__image {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .block-cat__image {
+    display: inline-block;
+    position: absolute;
+    right: 108px;
+    bottom: 50px;
+  }
+
+  .block-cat__switch {
+    position: absolute;
+    right: 200px;
+    bottom: 30px;
+  }
 }

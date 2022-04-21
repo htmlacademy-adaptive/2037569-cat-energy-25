@@ -60,3 +60,37 @@
   height: 60px;
   background-position: center;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    margin: 70px 30px;
+  }
+
+  .advantages__item--leaf::before {
+    width: 160px;
+    height: 80px;
+  }
+
+  .advantages__item--water::before {
+    width: 160px;
+    height: 80px;
+  }
+
+  .advantages__item--eat::before {
+    width: 160px;
+    height: 80px;
+  }
+
+  .advantages__item--alarm::before {
+    width: 160px;
+    height: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
