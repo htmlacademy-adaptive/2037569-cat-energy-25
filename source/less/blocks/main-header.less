@@ -1,5 +1,50 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   color: @black;
   background-color: @white;
-  display: block;
+  position: relative;
+}
+
+.main-header__logo-picture {
+  height: 38px;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.main-header__logo-name {
+  position: absolute;
+  left: 110px;
+  top: 24px;
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-picture {
+    height: 50px;
+  }
+
+  .main-header__logo-name {
+    height: 19px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo-picture {
+    height: 59px;
+  }
+
+  .main-header__logo-name {
+    height: 19px;
+  }
 }
