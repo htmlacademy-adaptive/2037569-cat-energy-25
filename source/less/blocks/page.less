@@ -4,5 +4,18 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  width: auto;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+    width: 1440px;
+  }
 }
