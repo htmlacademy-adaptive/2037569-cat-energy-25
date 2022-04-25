@@ -9,7 +9,22 @@
   text-decoration: none;
   color: @white;
   margin-top: 22px;
+  grid-area: button-primary;
 }
+
+.button--primary-extra {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  padding: 10px 109px;
+  background-color: @basic_green;
+  text-decoration: none;
+  color: @white;
+  margin-top: 22px;
+}
+
 
 .button--secondary {
   font-size: 16px;
@@ -21,4 +36,27 @@
   background-color: @basic_grey;
   text-decoration: none;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .button--primary-extra {
+    display: block;
+  }
+
+  .button--secondary {
+    height: 40px;
+    padding: 0;
+    padding-top: 10px;
+    margin-top: 70px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--primary-extra {
+    display: flex;
+    margin-left: 100px;
+    align-items: flex-end;
+  }
 }

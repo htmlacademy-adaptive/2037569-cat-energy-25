@@ -4,11 +4,33 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .contacts-info__text-field input {
+  font-family: @font-oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 21px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+  border: 1px solid #e7e7e7;
+  flex: 1;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-info {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    align-items: center;
+  }
+
+  .contacts-info__text-field {
+    margin-right: 78px;
+  }
 }

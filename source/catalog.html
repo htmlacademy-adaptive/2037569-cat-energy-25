@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог продукции «Кэт Энерджи»</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -20,9 +21,9 @@
     <source media="(min-width: 768px)" srcset="img/logo-name-grey.svg">
     <img src="img/logo-name-black.svg" width="101" height="18" alt="Логотип с названием Cat Energy">
   </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
+  <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <nav class="main-nav">
+      <ul class="main-nav__list main-nav__list--internal">
         <li class="main-nav__item main-nav__item--active">
           <a>
             Главная
@@ -55,15 +56,15 @@
         <table class="product__description">
           <tr>
             <td>Масса</td>
-            <td>500 г</td>
+            <td class="product__description--value">500 г</td>
           </tr>
           <tr>
             <td>Вкус</td>
-            <td>Курица</td>
+            <td class="product__description--value">Курица</td>
           </tr>
           <tr>
             <td>Цена</td>
-            <td>700 Р.</td>
+            <td class="product__description--value">700 Р.</td>
           </tr>
         </table>
           <a class="button button--primary" href="#">Заказать</a>
@@ -215,32 +216,50 @@
   </div>
   <div class="extra-products">
     <h2 class="extra-products__title">Дополнительные товары</h2>
-      <ul class="extra-products__list">
+      <div class="extra-products__wrapper">
+        <ul class="extra-products__list">
         <li class="extra-products__item item">
-          <h4 class="item__title">Сахарозаменитель</h4>
-          <p class="item__pack">1 упаковка (100 г)</p>
-          <p class="item__price">200 Р.</p>
-          <a class="button button--primary" href="#">Заказать</a>
+          <div class="item__wrapper-extra">
+          <div class="item__title">Сахарозаменитель</div>
+          <div class="item__wrapper">
+            <p class="item__pack">1 упаковка (100 г)</p>
+            <p class="item__price">200 Р.</p>
+          </div>
+          </div>
+          <a class="button button--primary-extra" href="#">Заказать</a>
         </li>
         <li class="extra-products__item item">
-          <h4 class="item__title">Питьевая вода</h4>
-          <p class="item__pack">5 литров</p>
-          <p class="item__price">50 Р.</p>
-          <a class="button button--primary" href="#">Заказать</a>
+        <div class="item__wrapper-extra">
+          <div class="item__title">Питьевая вода</div>
+          <div class="item__wrapper">
+            <p class="item__pack">5 литров</p>
+            <p class="item__price">50 Р.</p>
+          </div>
+        </div>
+          <a class="button button--primary-extra" href="#">Заказать</a>
         </li>
         <li class="extra-products__item item">
-          <h4 class="item__title">Молоко</h4>
-          <p class="item__pack">1 литр</p>
-          <p class="item__price">100 Р.</p>
-          <a class="button button--primary" href="#">Заказать</a>
+        <div class="item__wrapper-extra">
+          <div class="item__title">Молоко</div>
+          <div class="item__wrapper">
+            <p class="item__pack">1 литр</p>
+            <p class="item__price">100 Р.</p>
+          </div>
+        </div>
+          <a class="button button--primary-extra" href="#">Заказать</a>
         </li>
         <li class="extra-products__item item">
-          <h4 class="item__title">Витамины</h4>
-          <p class="item__pack">1 упаковка (30 г)</p>
-          <p class="item__price">300 Р.</p>
-          <a class="button button--primary" href="#">Заказать</a>
+        <div class="item__wrapper-extra">
+          <div class="item__title">Витамины</div>
+          <div class="item__wrapper">
+            <p class="item__pack">1 упаковка (30 г)</p>
+            <p class="item__price">300 Р.</p>
+          </div>
+        </div>
+          <a class="button button--primary-extra" href="#">Заказать</a>
         </li>
       </ul>
+    </div>
     <div class="extra-products__promo promo">
       <div class="promo__wrapper">
         <img class="promo__icon" src="img/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
@@ -251,14 +270,21 @@
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__contacts contacts contacts--grey">
+    <div class="main-footer__contacts contacts contacts--grey contacts--mini">
       <b class="contacts__appeal">
         Приглашаем<br>
         к сотрудничеству<br>
         дилеров!</b>
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__map" src="img/location.png" width="320" height="362" alt="Где мы находимся">
     </div>
+    <div class="main-footer__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/location-desktop.svg" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/location-tablet.svg" width="768" height="400">
+          <img src="img/location.png" width="320" height="362" alt="Где мы находимся">
+        </picture>
+    </div>
+    <div class="main-footer__wrapper-extra">
     <div class="main-footer__logo-name">
       <img src="img/logo-name-black.svg" width="128" height="24" alt="Логотип с названием Cat Energy">
     </div>
@@ -286,6 +312,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="img/html_academy.svg" width="27" height="34" alt="HTML Academy">
         </a>
+    </div>
     </div>
   </div>
 </footer>

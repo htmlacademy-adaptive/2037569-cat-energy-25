@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма заказа «Кэт Энерджи»</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -20,9 +21,9 @@
     <source media="(min-width: 768px)" srcset="img/logo-name-grey.svg">
     <img src="img/logo-name-black.svg" width="101" height="18" alt="Логотип с названием Cat Energy">
   </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
+  <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <nav class="main-nav">
+      <ul class="main-nav__list main-nav__list--internal">
         <li class="main-nav__item main-nav__item--active">
           <a>
             Главная
@@ -47,17 +48,21 @@
       <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="form__main-title">Подбор программы</h2>
         <p class="form__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <div class="form__main main">
-          <label class="main__text-field">Имя:*
-            <input type="text" name="username" value="Барсик">
-          </label>
-          <label class="main__text-field">Вес (кг):*
-            <input type="text" name="weight" value="7">
-          </label>
-          <label class="main__text-field">Возраст (лет):
-            <input type="text" name="age" value="7">
-          </label>
-        </div>
+        <div class="form__wrapper">
+          <div class="form__main main">
+            <div class="main__text-field">
+              <label for="username">Имя:*</label>
+              <input type="text" name="username" value="Барсик">
+            </div>
+            <div class="main__text-field">
+              <label for="weight">Вес (кг):*</label>
+              <input type="text" name="weight" value="7">
+            </div>
+            <div class="main__text-field">
+              <label for="age">Возраст (лет):</label>
+              <input type="text" name="age" value="7">
+            </div>
+          </div>
         <div class="form__radio radio">
           <label class="radio__option">
             <input type="radio" name="program" value="Похудение" checked>Похудение
@@ -69,14 +74,17 @@
             <input type="radio" name="program" value="Не знаю">Не знаю (нужен ваш совет)
           </label>
         </div>
+        </div>
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
         <div class="form__contacts-info contacts-info">
-          <label class="contacts-info__text-field">E-mail:*
+          <div class="contacts-info__text-field">
+            <label for="email">E-mail:*</label>
             <input type="text" name="email" value="kuklachev@gmail.com">
-          </label>
-          <label class="contacts-info__text-field">Телефон:*
+          </div>
+          <div class="contacts-info__text-field">
+            <label for="phone">Телефон:*</label>
             <input type="text" name="phone" value="8 (960) 900-60-90">
-          </label>
+          </div>
         </div>
         <h2 class="form__title">Комментарий</h2>
         <div class="form__comment">
@@ -97,23 +105,32 @@
             <input type="checkbox" name="extra" value="Витамины">Витамины
           </label>
         </div>
-        <button class="form__button" type="submit">Отправить заявку</button>
-        <p class="form__sure-fields">* — Обязательные поля</p>
+        <div class="form__order">
+          <button class="form__button" type="submit">Отправить заявку</button>
+          <p class="form__sure-fields">* — Обязательные поля</p>
+        </div>
     </form>
   </div>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__contacts contacts contacts--grey">
+    <div class="main-footer__contacts contacts contacts--grey contacts--mini">
       <b class="contacts__appeal">
         Приглашаем<br>
         к сотрудничеству<br>
         дилеров!</b>
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__map" src="img/location.png" width="320" height="362" alt="Где мы находимся">
     </div>
+    <div class="main-footer__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/location-desktop.svg" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/location-tablet.svg" width="768" height="400">
+          <img src="img/location.png" width="320" height="362" alt="Где мы находимся">
+        </picture>
+    </div>
+    <div class="main-footer__wrapper-extra">
     <div class="main-footer__logo-name">
-      <img src="logo-name-black.svg" width="128" height="24" alt="Логотип с названием Cat Energy">
+      <img src="img/logo-name-black.svg" width="128" height="24" alt="Логотип с названием Cat Energy">
     </div>
     <div class="main-footer__social social">
       <ul class="social__list">
@@ -139,6 +156,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="img/html_academy.svg" width="27" height="34" alt="HTML Academy">
         </a>
+    </div>
     </div>
   </div>
 </footer>

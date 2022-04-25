@@ -1,6 +1,7 @@
 .form__main-title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .form__slogan {
@@ -11,8 +12,6 @@
 }
 
 .form__main {
-  display: flex;
-  flex-direction: column;
   color: #444444;
 }
 
@@ -28,9 +27,19 @@
 }
 
 .form__comment textarea {
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 37px;
+  padding-top: 10px;
+  width: 320px;
+  height: 150px;
+  font-family: @font-oswald;
   font-size: 16px;
   line-height: 18px;
+  color: #444444;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
 }
 
 .form__contacts-info {
@@ -56,6 +65,8 @@
   background-color: @basic_green;
   text-decoration: none;
   color: @white;
+  display: flex;
+  margin: 0 auto;
   margin-top: 34px;
 }
 
@@ -65,4 +76,68 @@
   align-items: center;
   text-align: center;
   margin-top: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .form__radio {
+    margin-top: 72px;
+  }
+
+  .form__slogan {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+
+  .form__comment textarea {
+    width: 631px;
+  }
+
+  .form__main-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    margin: 0;
+  }
+
+  .form__sure-fields {
+    align-items: stretch;
+    text-align: start;
+    margin-right: 174px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 1220px;
+  }
+
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: 569px 570px;
+    align-items: center;
+  }
+
+  .form__radio {
+    margin-left: 80px;
+  }
+
+  .form__comment textarea {
+    width: 1220px;
+  }
 }
