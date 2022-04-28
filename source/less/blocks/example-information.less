@@ -1,45 +1,25 @@
-.example-information {
-  display: grid;
-  justify-content: center;
-  grid-template-areas:
-    "kilograms days"
-    "slim time"
-    "expenses amount";
+.example-information__wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 20px;
 }
 
-.example-information__number--kilograms {
-  grid-area: kilograms;
-  margin-right: 95px;
-}
-
-.example-information__description--slim {
-  grid-area: slim;
-}
-
-.example-information__number--days {
-  grid-area: days;
-}
-
-.example-information__description--time {
-  grid-area: time;
-}
-
-.example-information__cost--expenses {
-  grid-area: expenses;
-}
-
-.example-information__cost--amount {
-  grid-area: amount;
+.example-information__weight {
+  margin-right: 32px;
 }
 
 .example-information__cost {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: @black;
   text-transform: uppercase;
-  grid-area: cost;
   margin-top: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .example-information__number {
@@ -47,6 +27,13 @@
   line-height: 24px;
   color: @black;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  width: 124px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 18px;
 }
 
 .example-information__description {
@@ -54,24 +41,84 @@
   font-size: 12px;
   line-height: 12px;
   color: @special_dark-grey;
-  padding-top: 9px;
+  margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #eaeaea;
+  display: inline-block;
+  transform: translateY(-8px);
 }
 
 @media (min-width: @tablet-width) {
+  .example-information__number {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 10px;
+    padding-bottom: 19px;
+  }
+
+  .example-information__description {
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 7px;
+    margin-right: 5px;
+    padding-left: 5px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .example-information__wrapper {
+    margin-left: 30px;
+  }
+
+  .example-information__cost {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: end;
+    margin-left: auto;
+    margin-right: 31px;
+  }
+
+  .example-information__cost--amount {
+    margin-top: 9px;
+  }
+
   .example-information {
-    grid-template-areas:
-      "kilograms days expenses"
-      "slim time amount";
+    display: flex;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example-information {
-    display: grid;
+    display: block;
+    margin-top: 67px;
+    width: 436px;
+    margin-left: 110px;
+  }
+
+  .example-information__cost {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    grid-template-areas:
-      "kilograms days"
-      "slim time"
-      "expenses amount";
+    margin-left: -25px;
+    margin-top: 40px;
+  }
+
+  .example-information__cost--expenses {
+    width: 200px;
+    padding-right: 20px;
+  }
+
+  .example-information__cost--amount {
+    width: 90px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .example-information__wrapper {
+    margin-left: 0;
   }
 }

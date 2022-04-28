@@ -1,13 +1,15 @@
 .example__wrapper {
   background-color: #eaeaea;
-  padding-top: 25px;
   position: relative;
 }
 
 .example__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   color: @black;
+  padding-top: 25px;
+  padding-left: 20px;
 }
 
 .example__description {
@@ -16,10 +18,55 @@
   line-height: 18px;
   color: @special_dark-grey;
   margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .example__description {
     width: 436px;
+    margin-left: 110px;
+  }
+
+  .example__title-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 78px 0 75px;
+    margin-top: -213px;
+    margin-bottom: 0;
+    z-index: 0;
+  }
+
+  .example__title-wrapper::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: @white;
+    transform: translateX(-50%);
+  }
+
+  .example__title {
+    margin-left: 110px;
+    padding-left: 0;
   }
 }

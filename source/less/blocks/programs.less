@@ -43,15 +43,21 @@
   display: inline-block;
   padding-top: 19px;
   padding-left: 19px;
+  text-decoration: none;
+  color: @black;
 }
 
 @media (min-width: @tablet-width) {
   .programs__wrapper {
-    margin-top: 280px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 600px;
   }
 
   .programs-article {
     width: auto;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .programs__title--slim::after {
@@ -74,6 +80,44 @@
 
   .programs__title {
     padding-left: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    border-bottom: none;
+    width: 340px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: @black;
+    position: relative;
+  }
+
+  .programs__link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 10px;
+    left: 150px;
+    bottom: 10px;
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 11px;
+    background-position: right center;
+  }
+
+  .programs__link:hover::after {
+    right: 0;
+    width: 32px;
   }
 }
 
@@ -82,6 +126,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 360px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .programs__title--slim::after {
@@ -94,19 +140,38 @@
 
   .programs__title--slim::before {
     content: "";
-    background-image: url("../img/cat_back_1.svg");
+    background-image: url("../img/cat_back-1-desktop.svg");
     background-repeat: no-repeat;
     width: 100px;
     height: 106px;
     float: left;
+    margin-right: 62px;
+    margin-top: -26px;
   }
 
   .programs__title--fat::before {
     content: "";
-    background-image: url("../img/cat_back_2.svg");
+    background-image: url("../img/cat_back-2-desktop.svg");
     background-repeat: no-repeat;
     width: 134px;
     height: 100px;
     float: left;
+    margin-right: 62px;
+    margin-top: -16px;
+  }
+
+  .programs__description {
+    width: auto;
+    padding: 0;
+    margin-top: 49px;
+  }
+
+  .programs__title {
+    padding-top: 0;
+    margin-top: 30px;
+  }
+
+  .programs__link {
+    padding-left: 0;
   }
 }
