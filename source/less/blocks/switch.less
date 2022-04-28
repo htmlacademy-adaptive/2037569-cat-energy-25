@@ -1,0 +1,118 @@
+.switch {
+  padding-bottom: 36px;
+  position: relative;
+}
+
+.switch__wrapper-toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.switch__slider {
+  position: relative;
+  display: block;
+  width: 84px;
+  margin: 3px 18px;
+}
+
+.switch__scale {
+  display: block;
+  height: 12px;
+  background-color: @white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.switch__toggle {
+  cursor: pointer;
+}
+
+.switch__button {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  margin-top: -3px;
+  padding: 0;
+  background-color: #68b738;
+  border: 0;
+  border-radius: 3px;
+  text-indent: -1000px;
+  overflow: hidden;
+  transition: all 3s ease;
+}
+
+.switch__input--after:checked ~ .switch__elements .switch__element--before,
+.switch__input--before:checked ~ .switch__elements .switch__element--after {
+  display: none;
+}
+
+.switch__input--after:checked ~ .switch__elements .switch__element--after,
+.switch__input--before:checked ~ .switch__elements .switch__element--before {
+  display: block;
+}
+
+
+@media (min-width: @tablet-width) {
+  .switch__slider {
+    width: 428px;
+    margin: 0 21px 0 23px;
+    padding: 15px 0 13px;
+  }
+
+  .switch__button {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -17px;
+    background-color: @white;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(@black, 0.15);
+    cursor: pointer;
+  }
+
+  .switch__scale {
+    height: 6px;
+    background-color: #dcdcdc;
+    border: 0;
+  }
+
+  .switch__toggle {
+    font-size: 20px;
+    padding: 7px 0 6px;
+    line-height: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  }
+
+  .switch__toggle:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .switch__toggle:active {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .switch__wrapper-toggle {
+    justify-content: flex-end;
+  }
+}

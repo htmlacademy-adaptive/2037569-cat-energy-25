@@ -1,3 +1,12 @@
+.block-cat__image {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block-cat__switch {
   font-size: 16px;
   line-height: 20px;
@@ -5,15 +14,11 @@
   color: @black;
 }
 
-@media (min-width: @tablet-width) {
-  .block-cat__switch {
-    display: flex;
-    margin-left: 340px;
-  }
 
-  .block-cat__image {
-    display: flex;
-    margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .block-cat__image img {
+    width: 296px;
+    height: 511px;
   }
 }
 

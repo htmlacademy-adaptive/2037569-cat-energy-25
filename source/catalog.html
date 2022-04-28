@@ -21,25 +21,27 @@
     <source media="(min-width: 768px)" srcset="img/logo-name-grey.svg">
     <img src="img/logo-name-black.svg" width="101" height="18" alt="Логотип с названием Cat Energy">
   </a>
-  <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <nav class="main-nav">
-      <ul class="main-nav__list main-nav__list--internal">
-        <li class="main-nav__item main-nav__item--active">
-          <a>
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list main-nav__list--internal">
+          <li class="main-nav__item main-nav__item--major">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--form main-nav__item--active-internal">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 </header>
 <main class="main-container">
