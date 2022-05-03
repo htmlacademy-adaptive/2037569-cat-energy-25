@@ -9,7 +9,17 @@
   text-decoration: none;
   color: @white;
   margin-top: 22px;
+  margin-bottom: 25px;
   grid-area: button-primary;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #444444, 0.3;
+  }
 }
 
 .button--primary-extra {
@@ -18,13 +28,21 @@
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-  padding: 10px 109px;
+  padding: 8px 109px;
   background-color: @basic_green;
   text-decoration: none;
   color: @white;
   margin-top: 22px;
-}
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+  }
+}
 
 .button--secondary {
   font-size: 16px;
@@ -36,6 +54,14 @@
   background-color: @basic_grey;
   text-decoration: none;
   color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -44,19 +70,32 @@
   }
 
   .button--secondary {
-    height: 40px;
-    padding: 0;
-    padding-top: 10px;
-    margin-top: 70px;
-    align-items: center;
-    text-align: center;
+    margin-top: auto;
+    padding: 10px 50px;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 35px;
+  }
+
+  .button--primary {
+    padding: 10px 93px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .button--primary-extra {
     display: flex;
-    margin-left: 100px;
+    margin-left: 40px;
     align-items: flex-end;
+    padding: 8px 80px;
+  }
+
+  .button--primary {
+    padding: 10px 53px;
+  }
+
+  .button--secondary {
+    padding: 10px 39px;
   }
 }

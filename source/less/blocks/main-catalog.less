@@ -12,6 +12,7 @@
   font-weight: 400;
   margin-top: 27px;
   margin-bottom: 41px;
+  margin-left: 20px;
 }
 
 .main-catalog__product {
@@ -22,6 +23,10 @@
     "picture title ."
     "picture description description"
     "button-primary button-primary button-primary";
+}
+
+.main-catalog__product__show-all {
+  border-top: 1px solid #ebebeb;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,12 +42,21 @@
     align-items: center;
     padding: 0;
   }
+
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 65px;
+    margin-bottom: 56px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-catalog__list {
     display: flex;
     width: 1220px;
+    margin-left: 70px;
+    margin-right: 0;
   }
 
   .main-catalog__title {

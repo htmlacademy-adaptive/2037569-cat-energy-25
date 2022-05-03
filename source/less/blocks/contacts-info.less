@@ -1,3 +1,7 @@
+.contacts-info {
+  position: relative;
+}
+
 .contacts-info__text-field {
   font-weight: 400;
   font-size: 16px;
@@ -7,6 +11,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: #444444;
 }
 
 .contacts-info__text-field input {
@@ -15,12 +20,47 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #444444;
   padding-left: 21px;
   padding-top: 13px;
   padding-bottom: 15px;
   margin-left: 15px;
   border: 1px solid #e7e7e7;
   flex: 1;
+}
+
+.contacts-info__icon--phone {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+}
+
+.contacts-info__icon--email {
+  position: absolute;
+  top: 30px;
+  right: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-info__text-field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts-info__text-field input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts-info__icon--phone {
+    top: 110px;
+    right: 13px;
+  }
+
+  .contacts-info__icon--email {
+    top: 35px;
+    right: 17px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -32,5 +72,15 @@
 
   .contacts-info__text-field {
     margin-right: 78px;
+  }
+
+  .contacts-info__icon--phone {
+    top: 35px;
+    right: 130px;
+  }
+
+  .contacts-info__icon--email {
+    top: 35px;
+    left: 470px;
   }
 }

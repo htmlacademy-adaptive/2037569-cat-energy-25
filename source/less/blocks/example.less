@@ -34,10 +34,29 @@
     line-height: 24px;
     margin-bottom: 54px;
   }
+
+  .example__wrapper {
+    background-color: @white;
+  }
+
+  .example__block {
+    background-image: url("/img/background.svg");
+    background-repeat: no-repeat;
+    background-size: 768px 462px;
+    background-position: bottom;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
+  .example__block {
+    background-image: none;
+  }
+
+  .example__wrapper {
+    background-color: #f2f2f2;
+  }
+
   .example__description {
     width: 436px;
     margin-left: 110px;
@@ -68,5 +87,6 @@
   .example__title {
     margin-left: 110px;
     padding-left: 0;
+    margin-bottom: 0;
   }
 }

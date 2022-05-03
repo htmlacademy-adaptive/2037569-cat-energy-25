@@ -130,9 +130,13 @@
           <input class="switch__input switch__input--after" type="radio" id="switch__input--after" name="switch__input">
           <div class="switch__elements">
             <div class="switch__element switch__element--before">
-              <img class="block-cat block-cat__image block-cat__image--fat" src="img/before-cat.svg" width="280" height="232" alt="Фото кота ДО">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png">
+                <img class="block-cat block-cat__image block-cat__image--fat" src="img/before-cat.svg" width="280" height="232" alt="Фото кота ДО">
+              </picture>
             </div>
           <div class="switch__element switch__element--after">
+            <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.svg">
             <img class="block-cat block-cat__image block-cat__image--skinny" src="img/after-cat.svg" width="280" height="232" alt="Фото кота ПОСЛЕ">
           </div>
           </div>
