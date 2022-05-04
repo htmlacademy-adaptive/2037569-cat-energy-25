@@ -1,3 +1,14 @@
+.button {
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+  }
+}
+
 .button--primary {
   font-size: 16px;
   line-height: 20px;
@@ -11,15 +22,6 @@
   margin-top: 22px;
   margin-bottom: 25px;
   grid-area: button-primary;
-
-  &:hover,
-  &:focus {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: #444444, 0.3;
-  }
 }
 
 .button--primary-extra {
@@ -33,15 +35,6 @@
   text-decoration: none;
   color: @white;
   margin-top: 22px;
-
-  &:hover,
-  &:focus {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: rgba(@white, 0.3);
-  }
 }
 
 .button--secondary {
