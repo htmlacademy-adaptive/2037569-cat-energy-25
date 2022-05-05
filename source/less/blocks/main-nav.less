@@ -22,6 +22,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
+  color: @black;
 }
 
 .main-nav__item {
@@ -141,7 +142,7 @@
   }
 
   .main-nav__list {
-    background-image: url("../img/cat-background.svg");
+    background-image: url("../img/cat-background.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 720px;
@@ -151,20 +152,32 @@
     top: -135px;
   }
 
+  @media (min-resolution: 2dppx) {
+    .main-nav__list {
+      background-image: url("../img/cat-background@2x.png");
+      background-size: 720px auto;
+    }
+  }
+
   .main-nav__list--internal {
     background-image: none;
   }
 
   .main-nav__list a {
-    margin-top: 50px;
+    font-size: 20px;
     font-weight: 400;
-    color: @white;
     line-height: 30px;
+    color: @white;
+    margin-top: 50px;
     padding-bottom: 8px;
   }
 
   .main-nav__list--internal a {
     color: @black;
+  }
+
+  .main-nav__item {
+    height: 20px;
   }
 
   .main-nav__item--major {

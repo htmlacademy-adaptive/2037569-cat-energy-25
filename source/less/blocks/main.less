@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.main__text-field input {
+.main__text-field__input {
   font-family: @font-oswald;
   font-size: 16px;
   line-height: 18px;
@@ -21,4 +21,20 @@
   box-sizing: border-box;
   margin-left: 12px;
   flex: 1;
+}
+
+.main__text-field__input:invalid {
+  border-color: #ff8282;
+}
+
+@media (min-width: @tablet-width) {
+  .main__text-field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main__text-field__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,8 +1,15 @@
+.item {
+  padding-bottom: 29px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .item__title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
+  color: #222222;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-top: 20px;
 }
 
@@ -21,6 +28,7 @@
 .item__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,19 +59,24 @@
 }
 
 @media (min-width: @desktop-width) {
+  .item {
+    padding-bottom: 15px;
+  }
+
+
   .item__title {
     margin: 0;
     width: 200px;
   }
 
   .item__pack {
-    margin-left: 160px;
+    margin-left: 100px;
     width: 150px;
     text-align: start;
   }
 
   .item__price {
-    margin-left: 100px;
+    margin-left: 90px;
     width: 50px;
   }
 }
