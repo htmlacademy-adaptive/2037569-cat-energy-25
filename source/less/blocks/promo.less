@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../img/cat-green-catalog.svg");
+  background-image: url("../img/cat-green-catalog.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 280px;
@@ -9,6 +9,13 @@
   margin-top: 35px;
   margin-bottom: 35px;
   position: relative;
+}
+
+@media (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../img/cat-green-catalog@2x.png");
+    background-size: 280px auto;
+  }
 }
 
 .promo__slogan {
@@ -31,9 +38,16 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    background-image: url("../img/cat-green-catalog-tablet.svg");
+    background-image: url("../img/cat-green-catalog-tablet.png");
     width: 707px;
     height: 200px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../img/cat-green-catalog-tablet@2x.png");
+      background-size: 707px auto;
+    }
   }
 
   .promo__slogan {
@@ -48,13 +62,21 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    background-image: url("../img/cat-green-catalog-desktop.svg");
+    background-image: url("../img/cat-green-catalog-desktop.png");
     width: 245.02px;
     height: 288.9px;
     position: absolute;
     top: 45px;
     right: 170px;
   }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../img/cat-green-catalog-desktop@2x.png");
+      background-size: 245px auto;
+    }
+  }
+
 
   .promo__slogan {
     width: 161px;
