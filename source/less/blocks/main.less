@@ -23,10 +23,6 @@
   flex: 1;
 }
 
-.main__text-field__input:invalid {
-  border-color: #ff8282;
-}
-
 @media (min-width: @tablet-width) {
   .main__text-field {
     font-size: 20px;
@@ -36,5 +32,10 @@
   .main__text-field__input {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main__text-field__input--invalid {
+    border-color: #ff8282;
+    border-width: 2px;
   }
 }
