@@ -19,17 +19,19 @@
 @media (min-width: @tablet-width) {
   .checkbox {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 345px 300px;
   }
 
   .checkbox__option {
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
-    margin-top: 42px;
+    margin-top: 44px;
+    margin-bottom: -26px;
     background: url("../img/checkbox_option_tablet.svg") no-repeat;
     background-position: left center;
   }
+
 
   .checkbox__field:checked + label {
     background: url("../img/checkbox_option_active_tablet.svg") no-repeat;
@@ -41,10 +43,7 @@
   .checkbox {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .checkbox__option {
-    margin-right: 130px;
+    justify-content: space-between;
+    margin-right: 100px;
   }
 }

@@ -5,6 +5,7 @@
   background-color: @white;
   position: relative;
   width: 320px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .main-header__logo-picture {
@@ -25,10 +26,14 @@
 .main-header__logo-name {
   position: absolute;
   left: 110px;
-  top: 24px;
+  top: 23px;
 }
 
 @media (min-width: @tablet-width) {
+  .main-header {
+    border-bottom: none;
+  }
+
   .main-header__logo-picture {
     height: 50px;
     margin-top: 24px;

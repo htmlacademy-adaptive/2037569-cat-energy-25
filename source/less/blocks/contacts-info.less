@@ -7,7 +7,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 14px;
+  padding-top: 13px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -21,18 +21,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding-left: 21px;
+  padding-left: 13px;
   padding-top: 13px;
-  padding-bottom: 15px;
-  margin-left: 15px;
+  padding-bottom: 13px;
+  margin-left: 13px;
   border: 1px solid #e7e7e7;
   flex: 1;
 }
 
 .contacts-info__icon--phone {
   position: absolute;
-  top: 90px;
-  right: 10px;
+  top: 85px;
+  right: 12px;
 }
 
 .contacts-info__icon--email {
@@ -42,12 +42,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts-info__text-field {
+  .contacts-info__text-field input {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 21px;
   }
 
-  .contacts-info__text-field__input {
+  .contacts-info__text-field {
     font-size: 20px;
     line-height: 30px;
   }
@@ -71,21 +72,26 @@
 @media (min-width: @desktop-width) {
   .contacts-info {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 660px 660px;
     align-items: center;
   }
 
   .contacts-info__text-field {
-    margin-right: 78px;
+    margin-right: 90px;
+  }
+
+  .contacts-info__text-field input {
+    padding-left: 19px;
+    margin-left: 20px;
   }
 
   .contacts-info__icon--phone {
-    top: 35px;
-    right: 130px;
+    top: 30px;
+    right: 17px;
   }
 
   .contacts-info__icon--email {
-    top: 35px;
-    left: 470px;
+    top: 30px;
+    left: 535px;
   }
 }
