@@ -11,21 +11,21 @@
   grid-area: title;
   width: 76px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 .product__image {
   grid-area: picture;
-  margin-left: 26px;
+  margin-top: 17px;
 }
 
 .product__image--small {
-  margin-left: 35px;
-  margin-top: 45px;
+  //margin-left: 35px;
+  //margin-top: 30px;
 }
 
 .product__image--big {
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .product__link {
@@ -41,12 +41,12 @@
   line-height: 16px;
   grid-area: description;
   margin-top: 29px;
-  margin-left: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .product__description td tr {
   padding: 0;
+  margin: 0;
 }
 
 td {
@@ -59,14 +59,14 @@ td {
 
 @media (min-width: @tablet-width) {
   .product {
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    padding-bottom: 5px;
     width: 324px;
     background-color: #f2f2f2;
   }
 
   .product__image {
-    margin-top: -170px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -75,6 +75,7 @@ td {
     width: 160px;
     height: 172px;
     padding: 0 82px;
+    margin-top: -170px;
     background-image: linear-gradient(@white, @white 45px, #f2f2f2, #f2f2f2 45px);
   }
 
@@ -82,7 +83,7 @@ td {
     width: 168px;
     height: 206px;
     padding: 0 78px;
-    margin-top: -190px;
+    margin-top: -185px;
     background-image: linear-gradient(@white, @white 77px, #f2f2f2, #f2f2f2 77px);
   }
 
@@ -92,18 +93,19 @@ td {
     font-weight: 400;
     text-align: center;
     width: 150px;
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .product__description {
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 28px;
     width: 252px;
   }
 
   .product__description td {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    padding-top: 7px;
   }
 }
 
@@ -112,25 +114,33 @@ td {
     width: 245px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 135px;
+  }
+
+  .product__title {
+    margin-top: 5px;
+    margin-left: 6px;
+    line-height: 21px;
   }
 
   .product__image {
-    padding: 0 43px;
     margin-bottom: 10px;
   }
 
   .product__image--small {
+    padding: 0 42px;
     background-image: linear-gradient(@white, @white 50px, #f2f2f2, #f2f2f2 50px);
   }
 
   .product__image--big {
-    padding: 0 37px;
+    padding: 0 39px;
     margin-top: -200px;
-    background-image: linear-gradient(@white, @white 85px, #f2f2f2, #f2f2f2 85px);
+    background-image: linear-gradient(@white, @white 83px, #f2f2f2, #f2f2f2 83px);
   }
 
   .product__description {
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 23px;
   }
 }

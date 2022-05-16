@@ -36,34 +36,25 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
-    margin-top: 61px;
+    margin-bottom: 50px;
+    margin-top: 65px;
     margin-left: 30px;
     margin-right: 40px;
   }
 
   .example__wrapper {
-    background-color: @white;
-  }
-
-  .example__block {
-    background-image: url("/img/background.svg");
-    background-repeat: no-repeat;
-    background-size: 768px 462px;
-    background-position: bottom;
-    margin-top: 75px;
+    background-image: linear-gradient(180deg, #ffffff 575px, #eaeaea 20px);
+    position: relative;
+    padding-bottom: 57px;
+    margin-top: 45px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
-  .example__block {
-    background-image: none;
-    height: 0;
-  }
-
   .example__wrapper {
-    background-color: #f2f2f2;
+    padding-bottom: 0;
+    margin-bottom: -33px;
+    background-image: linear-gradient(180deg, #ffffff 265px, #f2f2f2 20px);
   }
 
   .example__description {
@@ -88,10 +79,10 @@
     top: 0;
     left: 50%;
     bottom: 0;
-    width: 100%;
+    width: auto;
     z-index: -1;
     background-color: @white;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 
   .example__title {

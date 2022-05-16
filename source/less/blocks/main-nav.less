@@ -9,7 +9,6 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
-  margin-bottom: 17px;
   list-style: none;
 }
 
@@ -34,7 +33,7 @@
   height: 20px;
   position: absolute;
   right: 20px;
-  top: -26px;
+  top: -43px;
   border: none;
   cursor: pointer;
   background-color: @white;
@@ -52,12 +51,16 @@
   cursor: pointer;
 }
 
+.main-nav--closed {
+  height: 0;
+}
+
 .main-nav--opened {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -35px;
     right: 20px;
     width: 25px;
     height: 2px;
@@ -148,10 +151,10 @@
     background-image: url("../img/cat-background.png");
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: space-between;
     width: 720px;
     height: 694px;
     position: absolute;
-    justify-content: flex-start;
     right: 0;
     top: -113px;
   }
@@ -185,13 +188,11 @@
   }
 
   .main-nav__item {
-    height: 20px;
     margin-left: 0;
-    margin-right: 40px;
   }
 
   .main-nav__item--major {
-    margin-left: 120px;
+    margin-left: 130px;
   }
 
   .main-nav__item--form {
