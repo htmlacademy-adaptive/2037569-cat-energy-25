@@ -32,6 +32,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .item {
+    padding-bottom: 26px;
+  }
+
+  .item:nth-child(4) {
+    border-bottom: none;
+  }
+
   .item__title {
     font-size: 20px;
     line-height: 20px;
@@ -59,6 +67,7 @@
 
   .item__wrapper {
     margin-bottom: 3px;
+    padding-top: 2px;
   }
 }
 
@@ -86,5 +95,10 @@
   .item__wrapper {
     margin-bottom: 0;
     margin-top: 5px;
+  }
+
+
+  .item:nth-child(4) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }

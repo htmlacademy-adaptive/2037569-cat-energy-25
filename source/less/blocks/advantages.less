@@ -28,6 +28,10 @@
   margin: 0;
 }
 
+.advantages__description br {
+  display: none;
+}
+
 .advantages__item--leaf::before {
   content: "";
   position: static;
@@ -150,6 +154,7 @@
   }
 
   .advantages__item--water::before {
+    background-image: url("../img/HowItWorks-water-tablet.svg");
     background-size: 80px 80px;
     width: 80px;
     height: 80px;
@@ -157,6 +162,7 @@
   }
 
   .advantages__item--eat::before {
+    background-image: url("../img/HowItWorks-eat-tablet.svg");
     background-size: 80px 80px;
     width: 80px;
     height: 80px;
@@ -164,6 +170,7 @@
   }
 
   .advantages__item--alarm::before {
+    background-image: url("../img/HowItWorks-alarm-tablet.svg");
     background-size: 80px 80px;
     width: 80px;
     height: 80px;
@@ -176,6 +183,10 @@
     width: 245px;
     height: 72px;
     margin-top: -65px;
+  }
+
+  .advantages__description br {
+    display: inherit;
   }
 
   .advantages__item--eat,
