@@ -19,8 +19,8 @@
   background-color: @basic_green;
   text-decoration: none;
   color: @white;
-  margin-top: 22px;
-  margin-bottom: 25px;
+  margin-top: 13px;
+  margin-bottom: 26px;
   grid-area: button-primary;
 }
 
@@ -43,7 +43,7 @@
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-  padding: 10px 94px;
+  padding: 8px 94px;
   background-color: @basic_grey;
   text-decoration: none;
   color: #444444;
@@ -60,6 +60,8 @@
 @media (min-width: @tablet-width) {
   .button--primary-extra {
     display: block;
+    margin-top: 22px;
+    padding: 10px 109px;
   }
 
   .button--secondary {
@@ -67,21 +69,24 @@
     padding: 10px 50px;
     margin-left: 37px;
     margin-right: 37px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .button--primary {
     padding: 10px 93px;
     margin-bottom: 35px;
+    margin-top: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .button--primary-extra {
     display: flex;
-    margin-left: 40px;
+    margin-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 6px;
     align-items: flex-end;
-    padding: 8px 80px;
+    padding: 10px 91px;
   }
 
   .button--primary {
@@ -89,6 +94,7 @@
   }
 
   .button--secondary {
-    padding: 10px 39px;
+    padding: 10px 34px;
+    margin-bottom: 40px;
   }
 }

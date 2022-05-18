@@ -1,6 +1,6 @@
 .contacts {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -30,6 +30,11 @@
   color: @special_dark-grey;
 }
 
+.contacts__adress--city {
+  margin-top: -11px;
+}
+
+
 @media (min-width: @tablet-width) {
   .contacts {
     padding-top: 60px;
@@ -41,7 +46,9 @@
     width: 160px;
     position: absolute;
     right: 70px;
+    top: 40px;
     font-size: 16px;
+    text-align: end;
   }
 
   .contacts__appeal {
@@ -49,6 +56,11 @@
     line-height: 26px;
     margin-left: 70px;
     font-weight: 400;
+    width: 200px;
+  }
+
+  .contacts__adress--city {
+    margin-top: 20px;
   }
 }
 
@@ -60,7 +72,21 @@
     width: 565px;
     height: 198px;
     padding: 0;
-    bottom: 257px;
+    bottom: 258px;
     left: 110px;
+  }
+
+  .contacts__appeal {
+    margin-left: 80px;
+  }
+
+  .contacts__adress {
+    text-align: left;
+    right: 75px;
+    top: 40px;
+  }
+
+  .contacts__adress--city {
+    padding-top: 0;
   }
 }

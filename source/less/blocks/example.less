@@ -1,6 +1,7 @@
 .example__wrapper {
   background-color: #eaeaea;
   position: relative;
+  margin-top: 47px;
 }
 
 .example__title {
@@ -27,39 +28,39 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 10px;
   }
 
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
+    margin-top: 65px;
+    margin-left: 30px;
+    margin-right: 40px;
   }
 
   .example__wrapper {
-    background-color: @white;
-  }
-
-  .example__block {
-    background-image: url("/img/background.svg");
-    background-repeat: no-repeat;
-    background-size: 768px 462px;
-    background-position: bottom;
+    background-image: linear-gradient(180deg, #ffffff 575px, #eaeaea 20px);
+    position: relative;
+    padding-bottom: 57px;
+    margin-top: 45px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
-  .example__block {
-    background-image: none;
-  }
-
   .example__wrapper {
-    background-color: #f2f2f2;
+    padding-bottom: 0;
+    margin-bottom: -31px;
+    background-image: linear-gradient(180deg, #ffffff 265px, #f2f2f2 20px);
   }
 
   .example__description {
     width: 436px;
     margin-left: 110px;
+    margin-top: 70px;
   }
 
   .example__title-wrapper {
@@ -78,15 +79,16 @@
     top: 0;
     left: 50%;
     bottom: 0;
-    width: 100%;
+    width: auto;
     z-index: -1;
     background-color: @white;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 
   .example__title {
     margin-left: 110px;
-    padding-left: 0;
+    margin-top: 50px;
     margin-bottom: 0;
+    padding-left: 0;
   }
 }
