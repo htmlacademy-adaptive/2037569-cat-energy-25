@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма заказа «Кэт Энерджи»</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body class="page__body">
 <svg style="display: none">
@@ -138,14 +137,14 @@
       </div>
       <h2 class="form__title form__title--contacts">Контактные данные (владельца кота)</h2>
         <div class="form__contacts-info contacts-info">
-          <div class="contacts-info__text-field">
+          <div class="contacts-info__text-field contacts-info__text-field--email">
             <label for="email">E-mail:*</label>
             <input class="contacts-info__text-field__input" type="text" name="email" value="kuklachev@gmail.com" required>
             <svg class="contacts-info__icon contacts-info__icon--email" width="18" height="13">
                 <use href="#icon-email"></use>
             </svg>
           </div>
-          <div class="contacts-info__text-field">
+          <div class="contacts-info__text-field contacts-info__text-field--phone">
             <label for="phone">Телефон:*</label>
             <input class="contacts-info__text-field__input" type="text" name="phone" value="8 (960) 900-60-90" required>
             <svg class="contacts-info__icon contacts-info__icon--phone" width="20" height="20">
