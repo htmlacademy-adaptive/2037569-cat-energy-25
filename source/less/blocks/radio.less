@@ -20,22 +20,18 @@
   padding-left: 46px;
   text-transform: uppercase;
   user-select: none;
-  background: url("../img/radiobutton_active.svg") no-repeat;
+  background: url("../img/radiobutton.svg") no-repeat;
   background-position: left center;
   cursor: pointer;
 }
 
-.radio-item__label:disabled {
-  opacity: 0.3;
-}
-
-.radio-item__input {
-  display: none;
-}
-
 .radio-item__input:checked + label {
-  background: url("../img/radiobutton_active-1.svg") no-repeat;
+  background: url("../img/radiobutton_active.svg") no-repeat;
   background-position: left center;
+}
+
+.radio-item__input:disabled + label {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
