@@ -41,6 +41,20 @@
   right: 13px;
 }
 
+.contacts-info__text-field__input--invalid {
+  outline: none;
+  border: 2px solid #ff8282;
+}
+
+.contacts-info__text-field__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.contacts-info__text-field__input:focus {
+  outline: none;
+  border: 2px solid #444444;
+}
+
 @media (min-width: @tablet-width) {
   .contacts-info__text-field input {
     font-size: 20px;
@@ -63,11 +77,6 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 8px;
-  }
-
-  .contacts-info__text-field__input--invalid {
-    border-color: #ff8282;
-    border-width: 2px;
   }
 
   .contacts-info__icon--phone {
