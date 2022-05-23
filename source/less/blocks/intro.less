@@ -6,6 +6,12 @@
   background-position: center;
   width: 320px;
   height: 302px;
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../img/green-cat-main@2x.jpg");
+    }
+  }
 }
 
 .intro__title {
@@ -62,6 +68,7 @@
     display: flex;
     flex-direction: column;
     width: 710px;
+    min-height: 650px; //Добавила минимальную высоту блока//
     position: relative;
   }
 
@@ -113,6 +120,7 @@
 @media (min-width: @desktop-width) {
   .intro {
     width: 100%;
+    min-height: 550px;
   }
 
   .intro__can-image {
@@ -135,6 +143,6 @@
 
   .intro__selection-link {
     margin-left: 70px;
-    top: 340px;
+    top: 338px;
   }
 }

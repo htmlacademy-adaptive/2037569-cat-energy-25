@@ -6,15 +6,14 @@
   background-position: left center;
 }
 
-.checkbox__field {
-  display: none;
-}
-
 .checkbox__field:checked + label {
   background: url("../img/checkbox_active.svg") no-repeat;
   background-position: left center;
 }
 
+.checkbox__field:disabled + label {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet-width) {
   .checkbox {
