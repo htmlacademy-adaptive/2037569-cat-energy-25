@@ -13,6 +13,7 @@
   font-family: @font-oswald;
   font-size: 16px;
   line-height: 18px;
+  color: @special_dark-grey;
   text-transform: uppercase;
   padding-left: 13px;
   padding-top: 13px;
@@ -23,8 +24,12 @@
   flex: 1;
 }
 
+.main__text-field__input::placeholder {
+  color: @special_dark-grey;
+}
+
 .main__text-field__input--invalid {
-  outline: 2px solid #ff8282;
+  outline: 2px solid @coral;
 }
 
 .main__text-field__input:hover {
