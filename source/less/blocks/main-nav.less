@@ -2,7 +2,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
-  width: 320px;
+  min-width: 320px;
   position: relative;
 }
 
@@ -16,8 +16,8 @@
   position: relative;
   display: block;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 26px;
+  padding-top: 22px;
+  padding-bottom: 23px;
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
@@ -41,14 +41,6 @@
 
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .main-nav__item {
-    display: none;
-  }
-
-  .main-nav__item--active {
-    display: block;
-  }
-
-  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
@@ -90,6 +82,13 @@
       transform: rotate(-45deg);
     }
   }
+
+  .main-nav--nojs .main-nav--opened {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -106,8 +105,8 @@
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    top: -53px;
-    right: 30px;
+    top: -52px;
+    right: 32px;
   }
 
   .main-nav__list a {
@@ -117,6 +116,7 @@
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 10px;
+    padding-top: 20px;
   }
 
   .main-nav__toggle {
@@ -139,25 +139,26 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 1440px;
+    width: 100%;
   }
 
   .main-nav__list {
     background-image: url("../img/cat-background.png");
+    background-color: @special_dark-green;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 720px auto;
+    background-position: right;
     justify-content: space-between;
-    width: 720px;
+    width: 50%;
     height: 694px;
     position: absolute;
-    right: 0;
     top: -113px;
+    right: 0;
   }
 
   @media (min-resolution: 2dppx) {
     .main-nav__list {
       background-image: url("../img/cat-background@2x.png");
-      background-size: 720px auto;
     }
 
     .main-nav__list--internal {
@@ -167,6 +168,7 @@
 
   .main-nav__list--internal {
     background-image: none;
+    background-color: transparent;
   }
 
   .main-nav__list a {
