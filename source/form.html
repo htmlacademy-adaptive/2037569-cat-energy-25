@@ -114,20 +114,20 @@
           <div class="form__main main">
             <div class="main__text-field">
               <label for="username">Имя:*</label>
-              <input class="main__text-field__input" type="text" id="username" value="Барсик" required>
+              <input class="main__text-field__input" type="text" id="username" placeholder="Барсик" required>
             </div>
             <div class="main__text-field">
               <label for="weight">Вес (кг):*</label>
-              <input class="main__text-field__input" type="text" id="weight" value="7" required>
+              <input class="main__text-field__input" type="text" id="weight" placeholder="7" required>
             </div>
             <div class="main__text-field">
               <label for="age">Возраст (лет):</label>
-              <input class="main__text-field__input" type="text" id="age" value="7">
+              <input class="main__text-field__input" type="text" id="age" placeholder="7">
             </div>
           </div>
           <div class="form__radio radio" >
             <div class="radio-item">
-              <input class="radio-item__input visually-hidden" type="radio" name="program" value="lost-weight" id="lost-weight">
+              <input class="radio-item__input visually-hidden" type="radio" name="program" value="lost-weight" id="lost-weight" checked>
               <label class="radio-item__label" for="lost-weight">Похудение</label>
             </div>
             <div class="radio-item">
@@ -144,14 +144,14 @@
         <div class="form__contacts-info contacts-info">
           <div class="contacts-info__text-field contacts-info__text-field--email">
             <label for="email">E-mail:*</label>
-            <input class="contacts-info__text-field__input" type="text" id="email" value="kuklachev@gmail.com" required>
+            <input class="contacts-info__text-field__input" type="text" id="email" placeholder="kuklachev@gmail.com" required>
             <svg class="contacts-info__icon contacts-info__icon--email" width="18" height="13">
                 <use href="#icon-email"></use>
             </svg>
           </div>
           <div class="contacts-info__text-field contacts-info__text-field--phone">
             <label for="phone">Телефон:*</label>
-            <input class="contacts-info__text-field__input" type="text" id="phone" value="8 (960) 900-60-90" required>
+            <input class="contacts-info__text-field__input" type="text" id="phone" placeholder="8 (960) 900-60-90" required>
             <svg class="contacts-info__icon contacts-info__icon--phone" width="20" height="20">
               <use href="#icon-phone"></use>
             </svg>
@@ -159,7 +159,7 @@
         </div>
         <h2 class="form__title form__title--comment">Комментарий</h2>
         <div class="form__comment">
-          <textarea name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form__comment__area" name="comment" id="comment-field" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <h2 class="form__title form__title--extra">Дополнительно</h2>
         <div class="form__checkbox checkbox">
