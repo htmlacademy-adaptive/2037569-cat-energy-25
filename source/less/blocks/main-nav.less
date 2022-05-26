@@ -20,7 +20,7 @@
   padding-bottom: 23px;
   text-transform: uppercase;
   text-decoration: none;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid @special_grey-3;
   color: @black;
 }
 
@@ -40,6 +40,10 @@
 }
 
 @media (max-width: @mobile-width-only) {
+  .main-nav--nojs {
+    display: none;
+  }
+
   .main-nav--closed .main-nav__item {
     display: none;
   }
